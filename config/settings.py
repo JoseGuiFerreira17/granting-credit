@@ -22,7 +22,11 @@ THIRD_APPS = [
     'rest_framework',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_APPS
+MY_APPS = [
+    'apps.proposal',
+]
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + MY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
